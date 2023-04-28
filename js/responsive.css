@@ -1,0 +1,24 @@
+@media screen and (max-width:1000px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .box-principal{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-width:600px) {
+    header .containe{
+        display: flex;
+        flex-direction: column;
+        }
+        /*.box-principal{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 250px;
+        }*/
+}

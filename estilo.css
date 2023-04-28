@@ -1,0 +1,208 @@
+:root{
+    --vermelho: #E50914; 
+    --preto:  #141414;
+    --outra : #aaa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+   display: flex;
+   justify-content: space-between;
+   margin:0.8rem;
+    
+}
+
+body{
+    background-color:var(--preto);
+    font-family: 'Arial', Times, serif ;
+    color: rgba(255, 255, 255, 0.979);
+}
+header {
+    margin:1rem;
+}
+header .container{
+     display: flex;
+     flex-direction:column;
+     align-items: center; 
+     justify-content: center;  
+     
+}
+.logo{
+    margin-left: 5px;
+    color:var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+header nav a {
+     text-decoration:none;
+     color: #aaa;
+     margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+.box-principal{
+    
+    width: 100%;
+    height: 45rem;
+   
+   
+
+    
+}
+.filme-principal{
+    background-image:  url('img/img-capa/peaky-blinders-2.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+   
+   /* margin-bottom: 120px;*/
+    color: #fafafa;
+    text-align: start;
+
+}
+.titulo{
+    margin-top: 40%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.descricao{
+    
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+
+}
+.botoes{
+    display:flex;
+    justify-content: center;
+    width: 35%;
+    margin:1rem ;
+    margin-top: 40rem;
+   
+}
+.botao{
+    background-color:  rgba(0,0,0.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+   
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal.container{
+    width: 70%;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   
+}
+
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.login{
+    display: block;
+    align-items: column;  
+    padding: 0%;
+    margin: 0%;
+    font-family: arial,Times;
+    color:var(--vermelho);
+    margin-right: 2px;
+   
+}
+  .botao1:hover{
+    color:#E50914;
+}
+
+h3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+    
+@media  ( min-width:350px)  and (max-width:700px){
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        padding: 0px;
+        margin:0px;
+        }
+        header .container{
+            display:flex;
+            flex-direction:column;
+            padding: 0px;
+            margin:0px;
+        }
+        header .login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            margin:5px;
+        }
+        .box-principal{
+            display: flex;
+            flex-direction: column;
+            height: 20rem;
+            width: 100%;
+            padding:0px;
+            margin:0px;
+        }
+        .filme-principal{
+            height: 15rem;
+            width:100%;
+            padding:0px;
+            margin:0px;
+        }
+        .botoes{
+            display:flex;
+            flex-direction: row;
+            padding:0px;
+            margin-top:10rem;
+            width:100%;
+            justify-content:center;
+            align-self:center;
+        }
+        .botao{
+            display:flex;
+            width: 90%;
+            padding:0px 0px;
+            margin:0px 0.5rem;
+        }
+}
+.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:flex;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
