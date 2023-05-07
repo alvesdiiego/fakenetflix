@@ -22,30 +22,35 @@
 <body>
     <header>
         <div class="container">
+          <div class="div-logo">
             <h2 class="logo">FAKEFLIX </h2>
-             <nav>
-                <a href="#">Início</a>
-                <a href="#filmes">filmes</a>
-                <a href="#series">Séries</a>
-                <a href="#documentarios">Documentários</a>
-            </nav>        
-        </div>
-
-        <div class="box-login" >
-           <label class="login" for="username">Login:</label>
-           <input class="login" type="text" id="username" name="nome" placeholder="Digite seu e-mail" >
-           <label  class="login" for="pass">Senha:</label>
-           <input  class="login" type="password" id="pass" name="senha" placeholder="Digite sua senha" >
-           <button role="button" class="botao1">
-            <i class="fas fa-sign-in-alt"> Acessar</i>
-            
-          </button>
-        </div>
+          </div class="botao-menu">  
+           <a href="javascritp:void(0);" class="icon" onclick="abrirMenu()">
+            <i class="fas fa-bars"></i>
+           </a>
+           <div id="menu" class="menu">
+            <nav>
+              <a  href="#">Início</a>
+              <a href="#filmes">Filmes</a>
+              <a href="#series">Séries</a>
+              <a href="#documentarios">Documentários</a>
+            </nav>
+            <div class="box-login"  id="box-login">
+              <label class="login" for="username">Login:</label>
+              <input class="login" type="text" id="username" name="nome" placeholder="Digite seu e-mail" >
+              <label  class="login" for="pass">Senha:</label>
+              <input  class="login" type="password" id="pass" name="senha" placeholder="Digite sua senha" >
+               <button class="botao-login">
+               <i class="fas fa-sign-in-alt">Entrar</i> 
+              </button> 
+            </div>
+           </div>
+          
     </header>
     <main class="box-principal">
       <div class="filme-principal" id="aleatorio"> 
             <div class="botoes">   
-              <button role="button" class="botao">
+              <button  role="button" class="botao" href="#box-login">
                 <i class="fas fa-play"> ASSISTIR AGORA</i> 
                </button> 
                <button role="button" class="botao">
